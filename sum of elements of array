@@ -1,0 +1,19 @@
+import java.util.*;
+public class array1 {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int[] array = new int[20];
+        int n = scn.nextInt();
+        for(int i=1;i<=n;i++){
+            array[i]=scn.nextInt();
+        }
+        
+        int sum=0;
+        for(int i=1;i<=n;i++){
+            sum = sum + array[i];
+        }
+        System.out.println("Sum of elements of array is : "+sum);
+
+    }
+    
+}
