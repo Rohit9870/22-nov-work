@@ -1,0 +1,31 @@
+import java.util.*;
+public class array2 {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int[] array = new int[20];
+        System.out.println("Enter the size of array :");
+        int n = scn.nextInt();
+        for(int i=1;i<=n;i++){
+            array[i] = scn.nextInt();
+
+        }
+        System.out.println("Your array is :");
+        for(int i=1;i<=n;i++){
+            System.out.println(array[i]);
+        }
+        int element=0;
+        int middle =0;
+        int element1=0;
+        if(n%2==0){
+            middle = n/2;
+            element = array[middle];
+            element1 = array[middle+1];
+            System.out.println("your middle elements are :"+element+"and "+element1);
+        }
+        else{
+            middle = (n/2)+1;
+            element = array[middle];
+            System.out.println("your middle element is :"+element);
+        }
+    }
+}
